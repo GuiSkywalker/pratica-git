@@ -7,8 +7,9 @@ import os
 def main():
     leitor = LeitorArquivo('data.txt')
     valores = leitor.getValores()
-    os.system("cls")
     print(valores)
+    plt.ylabel('Valores de entrada')
+    plt.xlabel('Amostragem')
     os.system("cls")
     plt.plot(valores)
     plt.show()
